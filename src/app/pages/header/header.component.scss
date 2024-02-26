@@ -1,0 +1,29 @@
+.navigation-tabs {
+    padding-block: 0.7rem;
+    padding-inline: 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+
+    >ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+
+        >li >button{
+            border: none;
+            background: transparent;
+            font-weight: 600;
+            padding-inline: 1rem;
+            padding-block: 0.2rem;
+        }
+
+        >li .active {
+            border-radius: 5px;
+            background-color: #c9f3f3;
+            color: #426bdd;
+            font-size: 17px;
+        }
+    }
+}

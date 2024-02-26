@@ -1,0 +1,26 @@
+<h1>Projects</h1>
+<p>A list of projects that I have worked on in the past.</p>
+<div class="projects-container">
+    <div *ngFor="let project of projectList">
+    <!-- <div class="card">
+            <img src="../../../../assets/lokos.png"/>
+            <span>LokOs</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis obcaecati fugit sunt hic consequatur quas vitae beatae! Porro, expedita.</span>
+        </div> -->
+
+    <div class="card-container">
+        <a href="/" class="hero-image-container">
+            <img class="hero-image" [src]="project.url"
+                alt="Spinning glass cube" />
+        </a>
+        <main class="main-content">
+            <h1 class="card-heading"><a href="#">{{project.name}}</a></h1>
+            <p>{{project.description}}</p>
+        </main>
+        <div class="card-attribute">
+            <p *ngFor="let tech of project.techStack" class="badge">{{tech}}</p>
+        </div>
+    </div>
+
+    </div>
+</div>
